@@ -13,6 +13,12 @@
   font-weight: 300;
 }
 
+button {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,8 +54,14 @@ main {
 /***** Navbar Styles Starts *****/
 
 header {
-  background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-  padding: 10px 160px;
+  background: linear-gradient(
+    180deg,
+    rgba(119, 119, 119, 0.088),
+    rgb(17, 17, 17),
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0.082) 100%
+  );
+  padding: 10px 150px;
   margin: 0;
 }
 
@@ -83,25 +95,22 @@ nav h1 {
   color: white;
   border: none;
   font-size: 20px;
-  padding: 0.6rem 1.125rem;
+  padding: 0.6rem 1.25rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 46px;
+  transition: all 0.4s ease-in-out;
 }
 
 .home-btn {
   color: white;
   font-weight: 600;
   background-color: rgb(230, 83, 60);
-  padding: 0.6rem 1.125rem;
+  padding: 0.6rem 1.25rem;
   border-radius: 46px;
 }
 
 .nav-items a:hover {
-  color: white;
-  border-radius: 46px;
   background-color: #ff4500;
-  transform: scale(1);
-  font-weight: 600;
 }
 
 .hamburger {
@@ -134,15 +143,83 @@ nav h1 {
 
 .banner img {
   display: block;
-  margin-left: auto;
 }
 
 .banner-btn {
   background-color: rgb(230, 83, 60);
   color: white;
   font-weight: 600;
-  border-radius: 10px;
-  padding: 0.6rem 2rem;
+  border-radius: 42px;
+  padding: 1rem 2.8rem;
+  font-size: 1.125rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.download-btn {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border-radius: 42px;
+  padding: 1rem 2.8rem;
+  font-size: 1.125rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: rgb(230, 83, 60);
+  border: 2px solid rgb(230, 83, 60);
+}
+
+.workout-btn,
+.video-tutorial-btn {
+  backdrop-filter: blur(1px);
+  background: rgba(48, 48, 48, 0.608);
+  padding: 1.25rem 1.75rem;
+  border: none;
+  border-radius: 12px;
+}
+
+.workout-btn h1,
+.video-tutorial-btn h1 {
+  font-size: 2rem;
+}
+
+.video-tutorial-btn {
+  position: relative;
+  top: -10.7rem;
+  left: -7.5rem;
+}
+
+.video {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(230, 83, 60);
+  border: none;
+  border-radius: 50%;
+}
+
+.tutorial-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.tutorial-btn-contents {
+  text-align: left;
+}
+
+.workout-btn h1,
+p {
+  text-align: left;
+}
+
+.workout-btn {
+  position: relative;
+  top: -28rem;
+  left: 1.7rem;
 }
 
 /***** Banner Styles Ends *****/
