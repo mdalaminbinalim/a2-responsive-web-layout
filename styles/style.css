@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+
+.inter-normal {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.playball-regular {
+  font-family: "Playball", serif;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.text-color {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/***** Navbar Styles Starts *****/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: rgb(230, 83, 60);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: rgba(255, 255, 255, 0.5);
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 0.6rem 1.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn {
+  color: white;
+  font-weight: 600;
+  background-color: rgb(230, 83, 60);
+  padding: 0.6rem 1.125rem;
+  border-radius: 46px;
+}
+
+.nav-items a:hover {
+  color: white;
+  border-radius: 46px;
+  background-color: #ff4500;
+  transform: scale(1);
+  font-weight: 600;
+}
+
+.hamburger {
+  color: white;
+  display: none;
+}
+
+/***** Navbar Styles Ends *****/
+
+/***** Responsive Styles *****/
+
+@media screen and (max-width: 576px) {
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
