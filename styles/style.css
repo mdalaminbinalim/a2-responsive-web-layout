@@ -10,31 +10,59 @@
 .playball-regular {
   font-family: "Playball", serif;
   font-style: normal;
+  font-weight: 300;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: black;
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
 }
 
 .text-color {
   color: rgba(255, 255, 255, 0.5);
 }
 
+p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+header,
+main {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 /***** Navbar Styles Starts *****/
+
+header {
+  background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+  padding: 10px 160px;
+  margin: 0;
+}
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
   margin-top: 50px;
 }
 
 nav h1 {
   font-size: 2rem;
+  font-weight: 800;
   color: rgb(230, 83, 60);
 }
 
@@ -82,6 +110,42 @@ nav h1 {
 }
 
 /***** Navbar Styles Ends *****/
+
+/***** Banner Styles Starts *****/
+
+.banner {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.8rem;
+}
+
+.banner-contents p {
+  max-width: 520px;
+  margin: 1.5rem auto;
+}
+
+.banner-title {
+  font-weight: 900;
+  font-size: 4.5rem;
+  max-width: 520px;
+}
+
+.banner img {
+  display: block;
+  margin-left: auto;
+}
+
+.banner-btn {
+  background-color: rgb(230, 83, 60);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.6rem 2rem;
+}
+
+/***** Banner Styles Ends *****/
 
 /***** Responsive Styles *****/
 
