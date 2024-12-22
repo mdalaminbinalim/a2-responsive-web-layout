@@ -56,10 +56,10 @@ main {
 header {
   background: linear-gradient(
     180deg,
-    rgba(119, 119, 119, 0.088),
+    rgba(119, 119, 119, 0.377),
     rgb(17, 17, 17),
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 0.082) 100%
+    rgba(17, 17, 17, 0.344),
+    rgba(119, 119, 119, 0.13) 100%
   );
   padding: 10px 150px;
   margin: 0;
@@ -110,7 +110,7 @@ nav h1 {
 }
 
 .nav-items a:hover {
-  background-color: #ff4500;
+  background-color: rgb(230, 83, 60);
 }
 
 .hamburger {
@@ -149,11 +149,23 @@ nav h1 {
   background-color: rgb(230, 83, 60);
   color: white;
   font-weight: 600;
-  border-radius: 42px;
+  border-radius: 2.625rem;
   padding: 1rem 2.8rem;
   font-size: 1.125rem;
   margin-right: 1rem;
   cursor: pointer;
+}
+
+.join-now-btn {
+  background-color: rgb(230, 83, 60);
+  color: white;
+  font-weight: 600;
+  border-radius: 2.625rem;
+  padding: 1rem 2.8rem;
+  font-size: 1.125rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
 }
 
 .download-btn {
@@ -161,7 +173,7 @@ nav h1 {
   background-color: transparent;
   color: white;
   font-weight: 600;
-  border-radius: 42px;
+  border-radius: 2.625rem;
   padding: 1rem 2.8rem;
   font-size: 1.125rem;
   margin-right: 1rem;
@@ -202,6 +214,12 @@ nav h1 {
   border-radius: 50%;
 }
 
+.video i {
+  color: white;
+  position: relative;
+  top: 15px;
+}
+
 .tutorial-btn {
   display: flex;
   gap: 1rem;
@@ -227,6 +245,18 @@ p {
 /***** Responsive Styles *****/
 
 @media screen and (max-width: 576px) {
+  header {
+    padding: 10px 30px;
+    margin-bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(119, 119, 119, 0.371),
+      rgb(17, 17, 17),
+      rgb(17, 17, 17),
+      rgba(119, 119, 119, 0.114) 100%
+    );
+  }
+
   .nav-items {
     display: none;
   }
@@ -237,6 +267,74 @@ p {
 
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  .banner-btn-parent {
+    display: flex;
+  }
+
+  .banner-btn {
+    display: none;
+  }
+
+  .join-now-btn {
+    display: block;
+    background-color: rgb(230, 83, 60);
+    color: white;
+    font-weight: 600;
+    border-radius: 2.5rem;
+    padding: 0.1rem 2rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .download-btn {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .video-tutorial-btn {
+    position: relative;
+    top: -22rem;
+    left: -2rem;
+  }
+
+  .workout-btn {
+    position: relative;
+    top: -32rem;
+    left: 2rem;
+  }
+
+  .workout-btn h1,
+  .video-tutorial-btn h1 {
+    font-size: 1.5rem;
+  }
+
+  .workout-btn,
+  .video-tutorial-btn {
+    padding: 1.25rem 1rem;
+    border-radius: 16px;
   }
 }
