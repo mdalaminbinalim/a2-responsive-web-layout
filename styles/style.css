@@ -602,6 +602,9 @@ hr {
 
 footer {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
   display: grid;
   gap: 8rem;
   grid-template-areas: "logo-container logo-container get-started-1 get-started-2";
@@ -612,6 +615,16 @@ footer {
 .get-started-2 p {
   cursor: pointer;
   margin: 1rem auto;
+}
+
+.hr-line {
+  max-width: 1250px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+}
+
+.copyright {
+  text-align: center;
 }
 
 /***** Footer Section Styles Ends *****/
@@ -840,5 +853,12 @@ footer {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 3rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem;
   }
 }
