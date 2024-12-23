@@ -46,7 +46,7 @@ p {
 }
 
 header,
-main {
+section {
   max-width: 1250px;
   margin: 0 auto;
 }
@@ -234,7 +234,7 @@ nav h1 {
 }
 
 .workout-btn h1,
-p {
+.workout-btn p {
   text-align: left;
 }
 
@@ -279,7 +279,7 @@ p {
 }
 
 .habit h3,
-p {
+.habit p {
   text-align: center;
   padding-right: 1rem;
   margin: 1rem auto;
@@ -299,12 +299,12 @@ p {
 
 .run-extra {
   display: flex;
-  gap: 10rem;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 7rem;
   align-items: center;
   margin-top: 6rem;
   background: rgb(34, 34, 34);
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   border-radius: 1.125rem;
 }
 
@@ -330,6 +330,121 @@ p {
 }
 
 /***** Run Extra Styles Ends *****/
+
+/***** BMI Calculator Styles Starts *****/
+
+.bmi-calc {
+  margin: 3rem auto;
+}
+
+.bmi-calc-contents {
+  max-width: 670px;
+  text-align: left;
+  margin: 5rem auto;
+}
+
+.bmi-calc-contents p {
+  text-align: left;
+}
+
+.bmi-calc-contents h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.bmi-calculator {
+  background: rgb(34, 34, 34);
+}
+
+table {
+  border-spacing: 0;
+}
+
+td,
+th {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 4rem;
+}
+
+td {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+th {
+  color: white;
+  font-weight: 400;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select::-webkit-outer-spin-button,
+select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid rgb(230, 83, 60);
+  outline: 0;
+}
+
+input,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  padding: 0.8rem 1.25rem;
+}
+
+select {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+}
+option {
+  color: black;
+}
+
+.bmi-calculator {
+  display: flex;
+  gap: 10rem;
+  padding: 3rem 8rem;
+  margin: 2rem auto;
+}
+
+.calculate-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin: 1rem auto;
+}
+
+#activity {
+  grid-column: span 2;
+}
+
+.bmi-chart h1,
+.calculate-contents h1 {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.calculate-btn {
+  padding: 1rem 4rem;
+}
+
+/***** BMI Calculator Styles Ends *****/
 
 /***** Responsive Styles *****/
 
