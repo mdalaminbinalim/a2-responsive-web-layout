@@ -455,4 +455,16 @@ p {
   .habits {
     margin-top: 1rem;
   }
+
+  .run-extra {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    margin: 2rem 1rem;
+  }
+
+  .run-extra-btn {
+    display: block;
+    width: 100%;
+  }
 }
