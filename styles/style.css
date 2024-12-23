@@ -519,6 +519,10 @@ hr {
   margin: 0.5rem 0;
 }
 
+.premium-btn {
+  border: none;
+}
+
 /***** Membership Plan Styles Ends *****/
 
 /***** Responsive Styles *****/
@@ -694,5 +698,42 @@ hr {
   .bmi-calc h1 {
     font-size: 2rem;
     margin-top: 0.5rem;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+
+  .plan {
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+  }
+
+  .premium-btn {
+    display: block;
+    border: none;
+    margin: 1rem auto;
+  }
+
+  .premium {
+    order: 1;
+  }
+
+  .classic {
+    order: 2;
+  }
+
+  .regular {
+    order: 3;
+  }
+
+  .membership-plans-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
   }
 }
