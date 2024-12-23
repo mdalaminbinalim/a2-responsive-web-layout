@@ -442,6 +442,7 @@ option {
 
 .calculate-btn {
   padding: 1rem 4rem;
+  border: none;
 }
 
 /***** BMI Calculator Styles Ends *****/
@@ -527,8 +528,8 @@ option {
 
   .workout-btn {
     position: relative;
-    top: -40rem;
-    left: 12rem;
+    top: -32rem;
+    left: 1rem;
   }
 
   .workout-btn h1,
@@ -578,8 +579,46 @@ option {
     margin: 2rem 1rem;
   }
 
+  .run-extra h1 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
+
   .run-extra-btn {
     display: block;
     width: 100%;
+  }
+
+  .bmi-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .bmi-calc {
+    margin: 3rem 0;
+  }
+
+  input,
+  select {
+    padding: 0.8rem 1rem;
+  }
+
+  td,
+  th {
+    padding: 0.8rem 2.3rem;
+  }
+
+  .bmi-calc-contents {
+    max-width: 670px;
+    text-align: left;
+    margin: 3.9rem 1rem;
+  }
+
+  .bmi-calc h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
   }
 }
