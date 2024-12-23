@@ -295,6 +295,42 @@ p {
 
 /***** Change Your Habits Styles Ends *****/
 
+/***** Run Extra Styles Starts *****/
+
+.run-extra {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  background: rgb(34, 34, 34);
+  padding: 2rem 3rem;
+  border-radius: 1.125rem;
+}
+
+.run-extra-img img {
+  max-width: 366px;
+  max-height: 312px;
+  border-radius: 1.125rem;
+}
+
+.run-extra-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.run-extra-contents {
+  text-align: left;
+  max-width: 500px;
+}
+
+.run-extra-contents p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/***** Run Extra Styles Ends *****/
+
 /***** Responsive Styles *****/
 
 @media screen and (max-width: 576px) {
