@@ -323,6 +323,7 @@ nav h1 {
 .run-extra-title {
   font-size: 3rem;
   font-weight: 800;
+  margin-bottom: 1rem;
 }
 
 .run-extra-contents {
@@ -411,6 +412,7 @@ select {
   border-radius: 8px;
   border: none;
   padding: 0.8rem 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 select {
@@ -463,7 +465,7 @@ li {
 .membership-plans-title {
   font-size: 3rem;
   font-weight: 800;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -485,7 +487,7 @@ li {
 .plan:hover {
   border: 2px solid rgb(230, 83, 60);
   box-shadow: 0 0 10px rgba(230, 83, 60, 0.8), 0 0 20px rgba(230, 83, 60, 0.6);
-  transform: scale(1.15);
+  transform: scale(1.125);
 }
 
 hr {
@@ -533,7 +535,8 @@ hr {
 
 .our-team-contents {
   text-align: center;
-  margin: 3rem auto;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
 }
 
 .our-team-description {
@@ -788,5 +791,19 @@ hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
+  }
+
+  .our-team-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0;
+    margin: 1rem 1rem 1rem;
+    padding: 2rem 1rem 0.1rem;
+  }
+
+  .our-team-contents {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
   }
 }
