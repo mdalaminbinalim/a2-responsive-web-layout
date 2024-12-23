@@ -198,12 +198,14 @@ nav h1 {
 .workout-btn h1,
 .video-tutorial-btn h1 {
   font-size: 2rem;
+  margin-bottom: 0;
+  font-weight: 800;
 }
 
 .video-tutorial-btn {
   position: relative;
-  top: -10.7rem;
-  left: -7.5rem;
+  top: -15rem;
+  right: 9rem;
 }
 
 .video {
@@ -223,6 +225,8 @@ nav h1 {
 .tutorial-btn {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .tutorial-btn-contents {
@@ -236,8 +240,8 @@ p {
 
 .workout-btn {
   position: relative;
-  top: -28rem;
-  left: 1.7rem;
+  top: -29rem;
+  left: 0.5rem;
 }
 
 /***** Banner Styles Ends *****/
@@ -367,23 +371,52 @@ p {
   .video-tutorial-btn {
     position: relative;
     top: -22rem;
-    left: -2rem;
+    left: -1rem;
   }
 
   .workout-btn {
     position: relative;
-    top: -32rem;
-    left: 2rem;
+    top: -40rem;
+    left: 12rem;
   }
 
   .workout-btn h1,
   .video-tutorial-btn h1 {
     font-size: 1.5rem;
+    margin-bottom: 0;
   }
 
   .workout-btn,
   .video-tutorial-btn {
-    padding: 1.25rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 16px;
+  }
+
+  .change-habits {
+    margin: 0 auto;
+  }
+
+  .habits-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+    justify-items: center;
+  }
+
+  .change-habits-title {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .change-habits-description {
+    font-size: 0.9rem;
+  }
+
+  .habits-contents {
+    margin: 0 auto;
+  }
+
+  .habits {
+    margin-top: 1rem;
   }
 }
