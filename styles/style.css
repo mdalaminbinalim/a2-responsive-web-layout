@@ -78,8 +78,8 @@ nav {
   margin-top: 50px;
 }
 
-nav h1 {
-  font-size: 2rem;
+.logo {
+  font-size: 3rem;
   font-weight: 800;
   color: rgb(230, 83, 60);
 }
@@ -580,6 +580,41 @@ hr {
 }
 
 /***** Our Team Section Styles Ends *****/
+
+/***** Footer Section Styles Starts *****/
+
+.logo-container {
+  grid-area: logo-container;
+  max-width: 500px;
+}
+
+.logo-container p {
+  margin: 1rem auto;
+}
+
+.get-started-1 {
+  grid-area: get-started-1;
+}
+
+.get-started-2 {
+  grid-area: get-started-2;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  gap: 8rem;
+  grid-template-areas: "logo-container logo-container get-started-1 get-started-2";
+  padding: 4rem 10rem;
+}
+
+.get-started-1 p,
+.get-started-2 p {
+  cursor: pointer;
+  margin: 1rem auto;
+}
+
+/***** Footer Section Styles Ends *****/
 
 /***** Responsive Styles *****/
 
