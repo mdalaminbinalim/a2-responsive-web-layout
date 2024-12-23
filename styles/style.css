@@ -525,6 +525,59 @@ hr {
 
 /***** Membership Plan Styles Ends *****/
 
+/***** Our Team Section Styles Starts *****/
+
+.our-team {
+  margin: 4rem auto;
+}
+
+.our-team-contents {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.our-team-description {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.our-team-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1rem auto;
+}
+
+.trainer-name {
+  position: relative;
+  z-index: 1;
+  top: -3.5rem;
+  left: 1rem;
+}
+
+.trainer {
+  margin: 0;
+  padding: 0;
+}
+
+.our-team-img img {
+  width: 100%;
+  height: 272px;
+  object-fit: cover;
+  filter: brightness(75%);
+  border-radius: 1.125rem;
+}
+
+.our-team-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  background: rgb(34, 34, 34);
+  border-radius: 1.125rem;
+  padding: 3rem 3rem 0.5rem;
+}
+
+/***** Our Team Section Styles Ends *****/
+
 /***** Responsive Styles *****/
 
 @media screen and (max-width: 576px) {
