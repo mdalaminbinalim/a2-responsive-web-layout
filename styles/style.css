@@ -242,6 +242,55 @@ p {
 
 /***** Banner Styles Ends *****/
 
+/***** Change Your Habits Styles Starts *****/
+
+.change-habits-title {
+  margin: 1rem auto;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.habits-contents {
+  text-align: center;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.change-habits-description,
+.change-habits-title {
+  text-align: center;
+}
+
+.habits-container img {
+  border-radius: 50%;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.habits-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3.5rem;
+  justify-items: center;
+}
+
+.habit h3,
+p {
+  text-align: center;
+  padding-right: 1rem;
+  margin: 1rem auto;
+}
+
+.habit p {
+  font-size: 0.9rem;
+}
+
+.habit {
+  max-width: 230px;
+}
+
+/***** Change Your Habits Styles Ends *****/
+
 /***** Responsive Styles *****/
 
 @media screen and (max-width: 576px) {
